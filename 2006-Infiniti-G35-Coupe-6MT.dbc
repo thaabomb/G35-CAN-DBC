@@ -31,8 +31,15 @@ BO_ 670 BrakeStatus: 8 Vector__XXX
 BO_ 721 SecondaryVehicleSpeed: 7 Vector__XXX
  SG_ SecondarySpeed_Counts : 8|16@1+ (1,0) [0|65535] "counts" CANedge1
 
+BO_ 734 BrakeStatus_2DE: 3 Vector__XXX
+ SG_ BrakeSwitch_2DE : 11|1@1+ (1,0) [0|1] "" CANedge1
+
 BO_ 1361 CoolantStatus: 7 Vector__XXX
  SG_ CoolantTemp_Mirror : 0|8@1+ (1,-40) [-40|215] "degC" CANedge1
+
+BO_ 1549 TurnIndicators: 8 Vector__XXX
+ SG_ LeftTurnIndicatorFlash : 13|1@1+ (1,0) [0|1] "" CANedge1
+ SG_ RightTurnIndicatorFlash_Provisional : 14|1@1+ (1,0) [0|1] "" CANedge1
 
 BO_ 1937 SecondaryBrakeStatus: 7 Vector__XXX
  SG_ BrakeSwitch_Mirror : 38|1@1+ (1,0) [0|1] "" CANedge1
