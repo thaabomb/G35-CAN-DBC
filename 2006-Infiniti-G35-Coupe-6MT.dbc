@@ -1,0 +1,41 @@
+VERSION ""
+NS_ :
+BS_:
+BU_: CANedge1
+
+BO_ 2 SteeringSensor: 5 Vector__XXX
+ SG_ SteeringAngle_Est : 0|16@1- (0.1,-2.2) [-3279|3274.5] "deg" CANedge1
+
+BO_ 505 EngineSpeed: 8 Vector__XXX
+ SG_ EngineRPM : 23|16@0+ (0.125,0) [0|8191.875] "rpm" CANedge1
+
+BO_ 573 EngineData: 8 Vector__XXX
+ SG_ AcceleratorPedal : 8|8@1+ (0.39215686274509803,0) [0|100] "%" CANedge1
+ SG_ EngineRPM_Mirror : 24|16@1+ (3.125,0) [0|204796.875] "rpm" CANedge1
+ SG_ CoolantTemp : 56|8@1+ (1,-50) [-50|205] "degC" CANedge1
+
+BO_ 659 WheelFields_1_2: 8 Vector__XXX
+ SG_ WheelSpeed1_Counts : 0|16@1+ (1,0) [0|65535] "counts" CANedge1
+ SG_ WheelSpeed2_Counts : 16|16@1+ (1,0) [0|65535] "counts" CANedge1
+
+BO_ 660 WheelFields_3_4: 8 Vector__XXX
+ SG_ WheelSpeed3_Counts : 0|16@1+ (1,0) [0|65535] "counts" CANedge1
+ SG_ WheelSpeed4_Counts : 16|16@1+ (1,0) [0|65535] "counts" CANedge1
+
+BO_ 661 ABSSpeed: 2 Vector__XXX
+ SG_ VehicleSpeed_Est : 0|16@1+ (0.0388,0) [0|2542.758] "mph" CANedge1
+
+BO_ 670 BrakeStatus: 8 Vector__XXX
+ SG_ BrakeSwitch : 30|1@1+ (1,0) [0|1] "" CANedge1
+
+BO_ 721 SecondaryVehicleSpeed: 7 Vector__XXX
+ SG_ SecondarySpeed_Counts : 8|16@1+ (1,0) [0|65535] "counts" CANedge1
+
+BO_ 1361 CoolantStatus: 7 Vector__XXX
+ SG_ CoolantTemp_Mirror : 0|8@1+ (1,-40) [-40|215] "degC" CANedge1
+
+BO_ 1937 SecondaryBrakeStatus: 7 Vector__XXX
+ SG_ BrakeSwitch_Mirror : 38|1@1+ (1,0) [0|1] "" CANedge1
+
+BO_ 1938 BrakePressure: 5 Vector__XXX
+ SG_ BrakePressure_Counts : 16|16@1- (1,0) [-32768|32767] "counts" CANedge1
