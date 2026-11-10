@@ -34,8 +34,21 @@ BO_ 721 SecondaryVehicleSpeed: 7 Vector__XXX
 BO_ 734 BrakeStatus_2DE: 3 Vector__XXX
  SG_ BrakeSwitch_2DE : 11|1@1+ (1,0) [0|1] "" CANedge1
 
+BO_ 901 TirePressure: 7 Vector__XXX
+ SG_ TirePressure1 : 16|8@1+ (0.25,0) [0|63.75] "psi" CANedge1
+ SG_ TirePressure2 : 24|8@1+ (0.25,0) [0|63.75] "psi" CANedge1
+ SG_ TirePressure3 : 32|8@1+ (0.25,0) [0|63.75] "psi" CANedge1
+ SG_ TirePressure4 : 40|8@1+ (0.25,0) [0|63.75] "psi" CANedge1
+ SG_ TirePressure1_Valid : 55|1@1+ (1,0) [0|1] "" CANedge1
+ SG_ TirePressure2_Valid : 54|1@1+ (1,0) [0|1] "" CANedge1
+ SG_ TirePressure3_Valid : 53|1@1+ (1,0) [0|1] "" CANedge1
+ SG_ TirePressure4_Valid : 52|1@1+ (1,0) [0|1] "" CANedge1
+
 BO_ 1361 CoolantStatus: 7 Vector__XXX
  SG_ CoolantTemp_Mirror : 0|8@1+ (1,-40) [-40|215] "degC" CANedge1
+
+BO_ 1477 ParkingBrakeStatusMirror: 8 Vector__XXX
+ SG_ ParkingBrakeSwitch_Mirror : 2|1@1+ (1,0) [0|1] "" CANedge1
 
 BO_ 1549 TurnIndicators: 8 Vector__XXX
  SG_ LeftTurnIndicatorFlash : 13|1@1+ (1,0) [0|1] "" CANedge1
@@ -43,6 +56,7 @@ BO_ 1549 TurnIndicators: 8 Vector__XXX
 
 BO_ 1937 SecondaryBrakeStatus: 7 Vector__XXX
  SG_ BrakeSwitch_Mirror : 38|1@1+ (1,0) [0|1] "" CANedge1
+ SG_ ParkingBrakeSwitch : 36|1@1+ (1,0) [0|1] "" CANedge1
 
 BO_ 1938 BrakePressure: 5 Vector__XXX
  SG_ BrakePressure_Counts : 16|16@1- (1,0) [-32768|32767] "counts" CANedge1
